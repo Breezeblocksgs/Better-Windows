@@ -1,0 +1,49 @@
+{
+  "BETTER_WINDOWS": {
+    "Controls": {
+      "DrawWindow": "Desenhar Janela Melhorada",
+      "ConvertSelected": "Converter Paredes Selecionadas em Janelas Melhoradas"
+    },
+    "Notifications": {
+      "NoWallsSelected": "Nenhuma parede selecionada. Selecione uma ou mais paredes primeiro.",
+      "ConvertedWalls": "{count} parede(s) convertida(s) em Janela Melhorada.",
+      "TooLargeToVault": "Essa criatura é grande demais para transpor essa janela."
+    },
+    "Config": {
+      "Legend": "Janela Melhorada",
+      "Enabled": "Tratar como Janela Melhorada",
+      "Material": "Material",
+      "MaterialGlass": "Vidro (ver e ouvir através)",
+      "MaterialOpaque": "Opaco (bloqueia visão e som)",
+      "ClosedMovement": "Passagem com Janela Aberta",
+      "ClosedMovementBlocked": "Qualquer um pode passar",
+      "ClosedMovementVaultable": "Limitado por tamanho (Transponível)",
+      "ClosedMovementHint": "Aplica-se somente com a janela aberta. Janela fechada ou trancada sempre bloqueia movimento. Passagem limitada por tamanho não tem confirmações, animações ou testes.",
+      "MaxVaultSize": "Tamanho Máximo para Transpor",
+      "MaxVaultSizeHint": "Tokens desse tamanho ou menores podem passar pela janela aberta; tokens maiores são bloqueados mesmo com ela aberta."
+    },
+    "DoorControl": {
+      "Open": "Janela Aberta",
+      "Closed": "Janela Fechada",
+      "Locked": "Janela Trancada"
+    },
+    "Settings": {
+      "Enabled": {
+        "Name": "Ativar Better Window",
+        "Hint": "Liga ou desliga o módulo inteiro. Desativar interrompe todo o comportamento do Better Window (ícones, controles, configuração, regras de movimento). Requer recarregar a aplicação após alterar."
+      },
+      "DefaultVaultSize": {
+        "Name": "Tamanho Padrão para Transpor",
+        "Hint": "O Tamanho Máximo para Transpor pré-preenchido em toda Janela Melhorada recém-desenhada ou convertida. Janelas existentes não são afetadas; altere por janela na Configuração da Parede."
+      },
+      "DefaultMaterial": {
+        "Name": "Material Padrão",
+        "Hint": "O Material pré-preenchido em toda Janela Melhorada recém-desenhada ou convertida. Janelas existentes não são afetadas; altere por janela na Configuração da Parede."
+      },
+      "DefaultClosedMovement": {
+        "Name": "Passagem Padrão com Janela Aberta",
+        "Hint": "A opção de Passagem com Janela Aberta pré-preenchida em toda Janela Melhorada recém-desenhada ou convertida. Janelas existentes não são afetadas; altere por janela na Configuração da Parede."
+      }
+    }
+  }
+}

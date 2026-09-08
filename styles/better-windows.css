@@ -1,0 +1,19 @@
+/* Toolbar tool icon: Lucide grid-2x2, masked so it inherits the core control-button color/state styling. */
+.control-tool[data-tool="better-windows-draw"] i.better-windows-tool-icon,
+.control-tool[data-tool="better-windows-convert"] i.better-windows-tool-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask: url("../icons/grid-2x2.svg") center / contain no-repeat;
+  mask: url("../icons/grid-2x2.svg") center / contain no-repeat;
+}
+
+.better-windows-fieldset .form-group {
+  margin-top: 0.5em;
+}
+
+.better-windows-fieldset .hint {
+  font-size: var(--font-size-12, 12px);
+  opacity: 0.8;
+}

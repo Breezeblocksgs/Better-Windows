@@ -1,0 +1,49 @@
+{
+  "BETTER_WINDOWS": {
+    "Controls": {
+      "DrawWindow": "Draw Better Window",
+      "ConvertSelected": "Convert Selected Walls to Better Windows"
+    },
+    "Notifications": {
+      "NoWallsSelected": "No walls selected. Select one or more walls first.",
+      "ConvertedWalls": "Converted {count} wall(s) to Better Windows.",
+      "TooLargeToVault": "This creature is too large to vault through that window."
+    },
+    "Config": {
+      "Legend": "Better Window",
+      "Enabled": "Treat as Better Window",
+      "Material": "Material",
+      "MaterialGlass": "Glass (see and hear through)",
+      "MaterialOpaque": "Opaque (blocks sight and sound)",
+      "ClosedMovement": "Passage While Open",
+      "ClosedMovementBlocked": "Anyone can pass",
+      "ClosedMovementVaultable": "Size-limited (Vaultable)",
+      "ClosedMovementHint": "Applies only while the window is open. Closed or locked windows always block movement. A size-limited pass-through has no prompts, animation, or rolls.",
+      "MaxVaultSize": "Max Size to Vault",
+      "MaxVaultSizeHint": "Tokens of this size or smaller can pass through the open window; larger tokens are blocked even while it's open."
+    },
+    "DoorControl": {
+      "Open": "Open Window",
+      "Closed": "Closed Window",
+      "Locked": "Locked Window"
+    },
+    "Settings": {
+      "Enabled": {
+        "Name": "Enable Better Window",
+        "Hint": "Turns the entire module on or off. Disabling stops all Better Window behavior (icons, controls, config, movement rules). Requires an application reload after changing."
+      },
+      "DefaultVaultSize": {
+        "Name": "Default Vault Size",
+        "Hint": "The Max Size to Vault pre-filled on every newly drawn or converted Better Window. Existing windows are unaffected; change it per-window in Wall Configuration."
+      },
+      "DefaultMaterial": {
+        "Name": "Default Material",
+        "Hint": "The Material pre-filled on every newly drawn or converted Better Window. Existing windows are unaffected; change it per-window in Wall Configuration."
+      },
+      "DefaultClosedMovement": {
+        "Name": "Default Passage While Open",
+        "Hint": "The Passage While Open setting pre-filled on every newly drawn or converted Better Window. Existing windows are unaffected; change it per-window in Wall Configuration."
+      }
+    }
+  }
+}
