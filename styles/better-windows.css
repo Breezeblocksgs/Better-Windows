@@ -1,6 +1,7 @@
-/* Toolbar tool icon: Lucide grid-2x2, masked so it inherits the core control-button color/state styling. */
-.control-tool[data-tool="better-windows-draw"] i.better-windows-tool-icon,
-.control-tool[data-tool="better-windows-convert"] i.better-windows-tool-icon {
+/* Toolbar tool icon: Lucide grid-2x2, masked so it inherits the core control-button color/state
+   styling. Scoped by the class alone (not a guessed parent wrapper) since Foundry inserts the
+   tool's `icon` value verbatim as this element's class list, wherever that element lives in the DOM. */
+i.better-windows-tool-icon {
   display: inline-block;
   width: 1em;
   height: 1em;
