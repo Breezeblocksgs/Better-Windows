@@ -2,6 +2,8 @@
 
 <a href="https://www.patreon.com/cw/Breezeblocksgs"><img src="images/buymeacoffee.png" alt="Buy Me a Coffee" width="386"></a>
 
+Are you tired of all your windows in Foundry being made of glass, whether you like it or not? You probably work around this by creating multiple doors, but then the door icons confuse your players. Are they always asking what’s a door and what’s a window? If you’ve ever dealt with this, your problems are over. Better Windows is here!
+
 A Foundry VTT (v14) module that turns ordinary wall segments into interactive **windows** — glass or opaque, openable, lockable, and (optionally) small enough to climb through even while shut.
 
 Better Windows reuses Foundry's native door system under the hood: a window is a real core door (same `ds` open/closed/locked state, same permissions, no custom sockets), rendered with its own icon and configurable independently of every other door on the map.
