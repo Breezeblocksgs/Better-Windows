@@ -35,6 +35,29 @@ export function registerSceneControlButton(controls) {
 }
 
 /**
+ * Foundry inserts a scene-control tool's `icon` string as a class on some
+ * element inside its button, but the exact wrapper/tag isn't documented and
+ * a guessed CSS selector didn't render anything. Sidestep the guesswork
+ * entirely: find the button by its `data-tool` attribute (a long-stable
+ * Foundry convention) and inject our own <img> directly, the same proven
+ * approach already used for the WallConfig fieldset.
+ */
+export function onRenderSceneControls(_app, html) {
+  const root = html instanceof HTMLElement ? html : html[0];
+  const button = root?.querySelector('[data-tool="better-windows-draw"]');
+  if (!button) return;
+  if (button.querySelector(`img.${MODULE_ID}-tool-icon`)) return; // already injected
+
+  const img = document.createElement("img");
+  img.src = ICON_PATH;
+  img.classList.add(`${MODULE_ID}-tool-icon`);
+
+  const placeholder = button.querySelector("i, img");
+  if (placeholder) placeholder.replaceWith(img);
+  else button.prepend(img);
+}
+
+/**
  * Stamp default window flags + core door fields onto a freshly-drawn Wall,
  * but only for a wall this client is actively drawing while in draw mode.
  * Never post-update walls created by cloning, import, or bulk operations.

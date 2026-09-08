@@ -1,13 +1,12 @@
-/* Toolbar tool icon: Lucide grid-2x2, masked so it inherits the core control-button color/state
-   styling. Scoped by the class alone (not a guessed parent wrapper) since Foundry inserts the
-   tool's `icon` value verbatim as this element's class list, wherever that element lives in the DOM. */
-i.better-windows-tool-icon {
+/* Toolbar tool icon: an <img> injected directly by draw-mode.mjs (not styled via Foundry's
+   icon-class mechanism, whose actual DOM shape isn't documented). The SVG's stroke="currentColor"
+   doesn't inherit page color inside an <img>, so force it white to match the dark control bar. */
+img.better-windows-tool-icon {
   display: inline-block;
   width: 1em;
   height: 1em;
-  background-color: currentColor;
-  -webkit-mask: url("../icons/grid-2x2.svg") center / contain no-repeat;
-  mask: url("../icons/grid-2x2.svg") center / contain no-repeat;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
 }
 
 .better-windows-fieldset .form-group {

@@ -3,7 +3,7 @@
   "type": "module",
   "title": "Better Windows",
   "description": "Turns wall segments into interactive glass or opaque windows that open, close, and lock like doors.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "Pedro Henrique Cesar Godoi Braz",
@@ -36,7 +36,7 @@
   "media": [],
   "url": "https://github.com/Breezeblocksgs/Better-Windows",
   "manifest": "https://github.com/Breezeblocksgs/Better-Windows/releases/latest/download/module.json",
-  "download": "https://github.com/Breezeblocksgs/Better-Windows/releases/download/v1.0.1/module.zip",
+  "download": "https://github.com/Breezeblocksgs/Better-Windows/releases/download/v1.0.2/module.zip",
   "bugs": "https://github.com/Breezeblocksgs/Better-Windows/issues",
   "readme": "https://github.com/Breezeblocksgs/Better-Windows#readme"
 }

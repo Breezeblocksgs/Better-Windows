@@ -1,7 +1,7 @@
 import { MODULE_ID } from "./repository.mjs";
 import { checkDoorControlClassOwnership, refreshWindowDoorControls, registerDoorControlClass } from "./door-control.mjs";
 import { registerConvertControlButton } from "./converter.mjs";
-import { onPreCreateWall, registerSceneControlButton, resetDrawMode } from "./draw-mode.mjs";
+import { onPreCreateWall, onRenderSceneControls, registerSceneControlButton, resetDrawMode } from "./draw-mode.mjs";
 import { onRenderWallConfig } from "./wall-config.mjs";
 import { warmWindowIconTextures } from "./icon-assets.mjs";
 import { registerVaultGuard } from "./vault-guard.mjs";
@@ -26,6 +26,7 @@ Hooks.once("init", () => {
 
   Hooks.on("preCreateWall", onPreCreateWall);
   Hooks.on("renderWallConfig", onRenderWallConfig);
+  Hooks.on("renderSceneControls", onRenderSceneControls);
 
   Hooks.on("canvasInit", () => {
     resetDrawMode();
