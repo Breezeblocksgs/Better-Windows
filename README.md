@@ -9,6 +9,8 @@ A Foundry VTT (v14) module that turns ordinary wall segments into interactive **
 Better Windows reuses Foundry's native door system under the hood: a window is a real core door (same `ds` open/closed/locked state, same permissions, no custom sockets), rendered with its own icon and configurable independently of every other door on the map.
 
 ## Features
+![Demo](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmlreW1ncm16MnFqcm83ZXJsOThic3liY3AxNmY0bXRjZnV4a2kybCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eciq0ExId6Xt9LWduH/giphy.gif)
+
 
 - **Draw or convert** — a dedicated Walls-layer tool draws new windows directly, or convert any selection of existing walls into windows in one batch action.
 - **Glass or opaque** — glass windows let sight, light, and sound pass while closed; opaque windows block them, just like a wall, until opened.
