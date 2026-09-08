@@ -1,5 +1,7 @@
 # Better Windows
 
+[![Buy Me a Coffee](images/buymeacoffee.png)](https://www.patreon.com/cw/Breezeblocksgs)
+
 A Foundry VTT (v14) module that turns ordinary wall segments into interactive **windows** — glass or opaque, openable, lockable, and (optionally) small enough to climb through even while shut.
 
 Better Windows reuses Foundry's native door system under the hood: a window is a real core door (same `ds` open/closed/locked state, same permissions, no custom sockets), rendered with its own icon and configurable independently of every other door on the map.
@@ -12,7 +14,6 @@ Better Windows reuses Foundry's native door system under the hood: a window is a
 - **Size-limited vaulting** — mark a window "vaultable" and cap the largest creature size (dnd5e size categories) that can climb through it while open. Bigger creatures are blocked even with the window open; everyone is blocked while it's closed or locked.
 - **Per-window configuration** — every window gets its own Material and Passage-While-Open settings, right inside the normal Wall Configuration sheet.
 - **World settings** — enable/disable the whole module, and set world-wide defaults (material, passage behavior, max vault size) applied to every newly created window.
-- **English and Portuguese (Brazil)** localization out of the box.
 - **System-independent** — no hard dependency on any game system. The size-based vaulting cap activates automatically when dnd5e is the active system and is simply inert otherwise.
 
 ## Installation
@@ -60,6 +61,7 @@ Existing windows are never changed retroactively by these settings — adjust in
 - **Foundry VTT**: v14 (verified against the current stable build).
 - **Game system**: none required. The vaultable size cap uses dnd5e's actor size scale when dnd5e is the active system; on any other system, windows can still be marked vaultable, they simply aren't size-restricted.
 - Built on documented, public Foundry APIs (`WallDocument`, `DoorControl`, `CONFIG.Canvas.doorControlClass`, standard hooks) with no socket usage and no monkey-patching, for the best chance of coexisting with other door- or wall-related modules.
+- **[Arms Reach](https://foundryvtt.com/packages/arms-reach)**: tested, compatible.
 
 ## Credits
 
