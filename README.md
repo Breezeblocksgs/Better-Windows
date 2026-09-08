@@ -1,6 +1,6 @@
 # Better Windows
 
-[![Buy Me a Coffee](images/buymeacoffee.png)](https://www.patreon.com/cw/Breezeblocksgs)
+<a href="https://www.patreon.com/cw/Breezeblocksgs"><img src="images/buymeacoffee.png" alt="Buy Me a Coffee" width="386"></a>
 
 A Foundry VTT (v14) module that turns ordinary wall segments into interactive **windows** — glass or opaque, openable, lockable, and (optionally) small enough to climb through even while shut.
 
